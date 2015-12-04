@@ -1,0 +1,80 @@
+/* 
+ *Name: Zorigtbaatar Chuluundorj
+ *Email: zorigtbaatar_chuluundorj@student.uml.edu
+ *Undergraduate at Umass Lowell, currently taking GUI 1
+ *Date: December, 4 2015
+ *Assignment 8: This css file is used to style Assignment8.html
+ *Assignment8.html creates a completely dynamic table based on parameters
+ *entered in an html form. Furthermore, the tables are also located in dynamically
+ *created tabs
+ */
+
+/*
+ *Centers the header of the page
+ *sets font, fontsize, weigh, and color
+ */
+h1 {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 30pt;
+    font-weight: 100;
+    font-style: italic;
+    color: #DCDCDC;
+}
+
+/*
+ *sets background image
+ *sets font of the body and color
+ */
+body {
+    background-image: url("http://i.stack.imgur.com/jGlzr.png");
+    font-family: "Times New Roman";
+    color: #DCDCDC;
+}
+
+/*
+ *Centers the form
+ */
+#inputNumbers {
+    text-align: center;
+}
+
+/* sets margin and border properties of a table*/
+/* sets margin and border properties of every descendant of the table*/
+
+table * {
+    margin: 30px auto;
+    border: 1px solid #DCDCDC;
+    width: 30px;
+    text-align: right;
+}
+
+/* sets the properties of the first row of the table*/
+tr:first-child{
+    background-color: #000000;
+    color: #FFFF00;
+}
+/* sets the properties of the first column of the table*/
+tr > td:first-child {
+    background-color: #000000;
+    color: #FFFF00;
+}
+
+/* Sets the color of error messages to red*/
+/* Sets the border color of fields containing invalid inputs to red*/
+.error {
+    border-color: red;
+    color: red;
+}
+
+/* floats the delete button to the right*/
+.checkDeleteTab {
+    float: right;
+}
+
+/*floats the delete button to the right*/
+/*and sets its right margin to 10px*/
+button.deleteButton {
+    float: right;
+    margin-right: 10px;
+}

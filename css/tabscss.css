@@ -1,0 +1,39 @@
+/* 
+ *Name: Zorigtbaatar Chuluundorj
+ *Email: zorigtbaatar_chuluundorj@student.uml.edu
+ *Undergraduate at Umass Lowell, currently taking GUI 1
+ *Date: December, 4 2015
+ *Assignment 8: This css file is used to style Assignment6.html
+ *Assignment8.html creates a completely dynamic table based on parameters
+ *entered in an html form. Furthermore, the tables are also located in dynamically
+ *created tabs.
+ */
+
+/*Sets all padding of ui widgets*/
+.ui-widget {
+    padding: 20px 100px 30px 100px;
+}
+
+/*Sets the properties of tab headers*/
+.ui-widget-header {
+ border:0px;
+ background:#DCDCDC none;
+ font-family:Helvetica;
+ color: purple;
+}
+
+/*Sets the properties of default tab contents*/
+.ui-widget-content .ui-state-default {
+ border:1px solid #DCDCDC;
+ background:#FFFFFF none;
+}
+
+/*Sets the properties of currently focused tab contents*/
+.ui-widget-content .ui-state-hover {
+    background:#DCDCDC none;
+}
+
+/*Sets the properties of active tab contents*/
+.ui-widget-content .ui-state-active {
+    font-size: 1.1em;
+}

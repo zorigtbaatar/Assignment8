@@ -1,0 +1,99 @@
+<!--
+Name: Zorigtbaatar Chuluundorj
+Email: zorigtbaatar_chuluundorj@student.uml.edu
+Undergraduate at Umass Lowell, currently taking GUI 1
+Date: October, 20 2015
+Assignment 8: This html creates a completely dynamic table based on parameters
+entered in an html form. After the information has been entered the Javascript file
+is used to dynamically create a table and update it. A css file is used to style
+the webpage
+-->
+
+
+<!-- The header file contains links to the javascript and css files used by this html file-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 8</title>
+        <!-- the jQuery Validation Plugin is from http://bassistance.de/jquery-plugins/jquery-plugin-validation -->
+        <!-- Necessary files for jquery ui-->
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+        <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+        <script src="http:://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <!-- This is my javascript file used to validate the form-->
+        <script type="text/javascript" src = "./js/validation.js"></script>
+        <!-- This is my javascript file for adding tab functionality-->
+        <script type="text/javascript" src = "./js/tabsjavascript.js"></script>
+        <!-- This is my css file used to style the form-->
+        <link rel="stylesheet" type="text/css" href = "./css/Assignment8.css"/>
+        <!-- This is my css file used to style the tab-->
+        <link rel="stylesheet" type="text/css" href = "./css/tabscss.css"/>     
+    </head>
+
+
+
+
+
+    <body>
+
+        <!--Create a form to get user input values-->
+        <!--After acquiring input values javascript function called
+        validate() is called to dynamically update the table with id
+        multiplicationTable-->
+        <!--The table is created in a new tab-->
+
+        <h1>
+            Assignment 8
+        </h1>
+
+        <div id="tabs">
+            <!--Delete button and the header of the tabs go here-->
+            <ul>
+                <li>
+                    <a href="#input">Input Form</a>
+                    <button class="deleteButton" onclick="return deleteCheckedTabs();">
+                        Delete Checked Tabs
+                    </button>
+                </li>
+                
+            </ul>
+            <!--Input form and content of the tabs go here-->
+            <div id="input">
+                <form id="inputNumbers" onsubmit="return validate();">
+                    Please enter four numbers below and click submit
+                    <div class = "boxText"> First column value </div>
+                    <span class = "box">
+                        <input id="firstColumn" name="firstColumn">
+                    </span>
+                    
+                    <br>
+                    <div> Last column value </div>
+                    <span>
+                        <input id="lastColumn" name="lastColumn">
+                    </span>
+                    <br>
+
+                    <div>First row value </div>
+                    <span>
+                        <input id="firstRow" name="firstRow">
+                    </span>
+                    <br>
+
+                    <div> Last row value </div>
+                    <span>
+                        <input id="lastRow" name="lastRow">
+                    </span>
+                    <br>
+
+                    <input type="submit" name="submit" id="submit"> 
+                </form>
+
+            </div>  
+        </div>
+
+    </body>
+</html>
